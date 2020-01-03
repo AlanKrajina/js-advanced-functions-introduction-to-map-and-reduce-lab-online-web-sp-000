@@ -1,4 +1,4 @@
 // Your code here
 function mapToNegativize(values){
-  values.map(el=>el * (-1))
+  return values.map(el=>el * (-1))
 }
