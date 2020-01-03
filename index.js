@@ -27,7 +27,7 @@ function reduceToTotal(values,startingPoint= null){
 }
 
 function reduceToAllTrue(values){
-  return arr.reduce((acc, val) => acc && Boolean(predicate(val)), true);
+  return values.reduce((acc, val) => acc && Boolean(predicate(val)), true);
 
 }
 
