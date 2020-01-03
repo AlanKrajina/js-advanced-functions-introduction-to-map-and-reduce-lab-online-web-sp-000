@@ -31,7 +31,7 @@ function reduceToAllTrue(values){
   return values.every(isBelowThreshold);
 }
 
-
 function reduceToAnyTrue(values){
-  return values.map(el=>el * el )
+  const isBelowThreshold = (currentValue) => currentValue ? true : false;
+  return values.every(isBelowThreshold);
 }
