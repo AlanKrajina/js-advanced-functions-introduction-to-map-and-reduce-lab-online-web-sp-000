@@ -7,3 +7,11 @@ function mapToNegativize(values){
 function mapToNoChange(values){
   return values.map(el=>el )
 }
+
+function mapToDouble(values){
+  return values.map(el=>el * 2 )
+}
+
+function mapToSquare(values){
+  return values.map(el=>el * el )
+}
