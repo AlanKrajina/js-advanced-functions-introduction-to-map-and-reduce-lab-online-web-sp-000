@@ -17,7 +17,7 @@ function mapToSquare(values){
 
 
 
-function reduceToTotal(values,startingPoint){
+function reduceToTotal(values,startingPoint= null){
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
   if (startingPoint !== null){
   return values.reduce(reducer)
