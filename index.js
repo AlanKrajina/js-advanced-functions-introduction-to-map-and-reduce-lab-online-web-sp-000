@@ -29,7 +29,7 @@ function reduceToTotal(values,startingPoint= null){
 function reduceToAllTrue(values){
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
-  return values.forEach(el =>
+  const q = values.forEach(el =>
     el ? true : false
   )
 
