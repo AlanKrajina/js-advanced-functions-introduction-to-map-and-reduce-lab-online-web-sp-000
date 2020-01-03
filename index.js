@@ -18,10 +18,14 @@ function mapToSquare(values){
 
 
 function reduceToTotal(values){
-  return values.map(el=>el * el )
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+  return values.reduce(reducer)
 }
 
 function reduceToAllTrue(values){
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
   return values.map(el=>el * el )
 }
 
