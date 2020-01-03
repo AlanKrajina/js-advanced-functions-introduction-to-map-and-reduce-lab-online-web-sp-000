@@ -27,18 +27,8 @@ function reduceToTotal(values,startingPoint= null){
 }
 
 function reduceToAllTrue(values){
-  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  return arr.reduce((acc, val) => acc && Boolean(predicate(val)), true);
 
-  return values.forEach(el =>
-    el ? true : false
-  )
-
-  /*
-  if (values){
-  return values.reduce(reducer)
-  } else {
-  return values.reduce(reducer,startingPoint)
-}*/
 }
 
 
