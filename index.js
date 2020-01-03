@@ -27,7 +27,8 @@ function reduceToTotal(values,startingPoint= null){
 }
 
 function reduceToAllTrue(values){
-  return values.reduce((acc, val) => acc && Boolean(predicate(val)), true);
+  const isBelowThreshold = (currentValue) => currentValue ? true : false;
+  return values.every(isBelowThreshold));
 
 }
 
