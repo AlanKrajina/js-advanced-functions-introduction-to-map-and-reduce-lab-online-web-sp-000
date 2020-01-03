@@ -21,10 +21,9 @@ function reduceToTotal(values,startingPoint= null){
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
   if (startingPoint === null){
   return values.reduce(reducer)
-} else {
+  } else {
   return values.reduce(reducer,startingPoint)
-
-}
+  }
 }
 
 function reduceToAllTrue(values){
